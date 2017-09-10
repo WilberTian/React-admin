@@ -1,0 +1,73 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "Babel": true,
+        "React": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    	"indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-console": 0,
+    	"no-alert": 0,
+        "global-require": "off",
+        "import/no-unresolved": "off",
+        "no-underscore-dangle": "off",
+        "no-new-func": "off",
+        "no-param-reassign": "off",
+        "react/prefer-stateless-function": "off",
+        "react/no-multi-comp": "off",
+        "react/jsx-no-bind": "off",
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/forbid-prop-types": [
+            "off"
+        ],
+        "react/prop-types": [
+            "off"
+        ],
+        "react/no-unused-prop-types": [
+            "off"
+        ],
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "arrow-body-style": [
+            "error",
+            "always"
+        ],
+        "class-methods-use-this": "off",
+        "comma-dangle": "off",
+        "react/jsx-first-prop-new-line": "off",
+        "react/jsx-filename-extension": "off",
+        "no-restricted-syntax": "off",
+        "react/no-array-index-key": "off",
+        "max-len": [
+            "error",
+            120
+        ],
+        'no-unused-vars': [
+            'warn',
+            {
+                'vars': 'all',
+                'args': 'after-used',
+                'caughtErrors': 'none'
+            }
+        ]
+    }
+}

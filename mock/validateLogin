@@ -1,0 +1,8 @@
+{
+    "code": 200,
+    "message": "对不起，您没有伪登陆权限！",
+    "data": {
+        "userName": "Wilber"
+    },
+    "success":true
+}
