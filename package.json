@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "lint": "eslint ./src",
-    "clean": "rimraf dist",
+    "clean": "rimraf release",
     "build:webpack": "NODE_ENV=production webpack --config ./scripts/webpack.config.js",
     "build": "npm run clean && npm run build:webpack",
     "dev": "NODE_ENV=development node ./scripts/dev.js",
