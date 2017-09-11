@@ -4,6 +4,6 @@ export const componentsExampleNav = {
 };
 
 export const dashboardNav = {
-    system: 'dashboard',
+    system: '',
     sub: 'dashboard'
 };
