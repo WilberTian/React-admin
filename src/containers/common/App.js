@@ -55,9 +55,9 @@ class App extends PureComponent {
         }
     }
 
-    _onCollapse(collapsed) {
+    _onCollapse() {
         this.setState({
-            collapsed,
+            collapsed: !this.state.collapsed,
             displayDetailLogo: !this.state.displayDetailLogo
         });
     }
@@ -79,9 +79,9 @@ class App extends PureComponent {
                 { this.state.loading && <LoadingScreenComponent /> }
                 { !this.state.loading && <Layout className="app-container">
                     <Sider
+                      trigger={null}
                       collapsible
                       collapsed={this.state.collapsed}
-                      onCollapse={::this._onCollapse}
                     >
                         { !this.state.displayDetailLogo && <div className="brand">
                             <div className="logo">
@@ -131,12 +131,19 @@ class App extends PureComponent {
                     </Sider>
                     <Layout>
                         <Header style={{ background: '#fff', padding: 0 }}>
-                            <span className="login-user-info">
-                                欢迎，{this.state.userName}
-                            </span>
-                            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
-                            <span className="logout" onClick={::this._handleLogout}>退出</span>
-                            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+                            <Icon
+                              className="trigger"
+                              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                              onClick={::this._onCollapse}
+                            />
+                            <div className="header-content">
+                                <span className="login-user-info">
+                                    欢迎，{this.state.userName}
+                                </span>
+                                {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+                                <span className="logout" onClick={::this._handleLogout}>退出</span>
+                                {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+                            </div>
                         </Header>
                         <Content style={{ margin: '0 16px' }}>
                             { children }

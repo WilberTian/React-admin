@@ -7,17 +7,31 @@
 		.ant-layout-header {
 			height: 40px;
 			line-height: 40px;
-			display: flex;
-    		justify-content: flex-end;
 
-			.login-user-info {
-				margin-right: 24px;
+    		.trigger {
+			    font-size: 18px;
+			    line-height: 40px;
+			    padding: 0 16px;
+			    cursor: pointer;
+			    transition: color .3s;
 			}
 
-			.logout {
-				color: #108ee9;
-				cursor: pointer;
-				margin-right: 24px;
+			.trigger:hover {
+			    color: #108ee9;
+			}
+
+			.header-content{
+				float: right;
+				
+				.login-user-info {
+					margin-right: 24px;
+				}
+
+				.logout {
+					color: #108ee9;
+					cursor: pointer;
+					margin-right: 24px;
+				}
 			}
 		}
 	}
