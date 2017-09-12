@@ -32,14 +32,18 @@ const devServerOptions = {
 const compiler = webpack(webpackConfig);
 const server = new WebpackDevServer(compiler, devServerOptions);
 
+let browserOpened = false;
+
 compiler.plugin('done', () => {
     server.listen(configs.developmentPort, configs.developmentIP, function (err, result) {
         if (err) {
             console.log(err);
         } else {
             console.log('Listening at : http://' + configs.developmentIP + ':' + configs.developmentPort);
-
-            openBrowser('http://' + configs.developmentIP + ':' + configs.developmentPort + configs.devEntryHtml);
+            if (!browserOpened) {
+                browserOpened = true;
+                openBrowser('http://' + configs.developmentIP + ':' + configs.developmentPort + configs.devEntryHtml);
+            }
         }
     });
 });
