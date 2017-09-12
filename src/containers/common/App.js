@@ -106,14 +106,27 @@ class App extends PureComponent {
                         >
                             <SubMenu
                               key="componentsSystem"
-                              title={<span><Icon type="check-square-o" /><span>组件系统</span></span>}
+                              title={<span><Icon type="appstore" /><span>组件系统</span></span>}
                             >
                                 <Menu.Item key="components-example">常用组件示例</Menu.Item>
                             </SubMenu>
                             <Menu.Item key="dashboard">
-                                <Icon type="line-chart" />
+                                <Icon type="rocket" />
                                 <span>Dashboard</span>
                             </Menu.Item>
+                            <SubMenu
+                              key="chartSystem"
+                              title={<span><Icon type="area-chart" /><span>图表</span></span>}
+                            >
+                                <Menu.Item key="linechart">
+                                    <Icon type="line-chart" />
+                                    <span>linechart</span>
+                                </Menu.Item>
+                                <Menu.Item key="barchart">
+                                    <Icon type="bar-chart" />
+                                    <span>barchart</span>
+                                </Menu.Item>
+                            </SubMenu>
                         </Menu>
                     </Sider>
                     <Layout>

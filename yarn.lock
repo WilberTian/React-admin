@@ -2034,6 +2034,18 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+echarts-for-react@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/echarts-for-react/-/echarts-for-react-2.0.0.tgz#bf9c32b37a7ab99125f0ebf1c39f1dbae263d922"
+  dependencies:
+    element-resize-event "2.0.7"
+
+echarts@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-3.7.1.tgz#fad25d4b1cbb7ec28f1b0fa890e9a0d86056b2d5"
+  dependencies:
+    zrender "^3.6.1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -2041,6 +2053,10 @@ ee-first@1.1.1:
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.18:
   version "1.3.21"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.21.tgz#a967ebdcfe8ed0083fc244d1894022a8e8113ea2"
+
+element-resize-event@2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/element-resize-event/-/element-resize-event-2.0.7.tgz#8b63953715967cd2241620245573e79e684e07b0"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -6388,3 +6404,7 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+zrender@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-3.6.1.tgz#362e8c4eb6c970a8d97c84daa8d65f37921b826b"

@@ -7,3 +7,13 @@ export const dashboardNav = {
     system: '',
     sub: 'dashboard'
 };
+
+export const linechartNav = {
+    system: 'chartSystem',
+    sub: 'linechart'
+};
+
+export const barchartNav = {
+    system: 'chartSystem',
+    sub: 'barchart'
+};
