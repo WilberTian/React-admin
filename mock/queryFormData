@@ -1,0 +1,18 @@
+{
+    "code": 200,
+    "message": "获取成功",
+    "data": {
+        "formItems": [{
+        	"formItemType": "TextComponent",
+        	"formItemData": {
+        		"isRequired": true,
+        		"value": "",
+	        	"rules": [],
+	        	"caption": "主标题",
+	        	"note": "请填写主标题，8到14个字",
+	        	"placeholder": "请填写主标题"
+        	}        	
+        }]
+    },
+    "success":true
+}

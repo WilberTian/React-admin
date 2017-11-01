@@ -109,6 +109,7 @@ class App extends PureComponent {
                               title={<span><Icon type="appstore" /><span>组件系统</span></span>}
                             >
                                 <Menu.Item key="components-example">常用组件示例</Menu.Item>
+                                <Menu.Item key="customized-form">自定义表格</Menu.Item>
                             </SubMenu>
                             <Menu.Item key="dashboard">
                                 <Icon type="rocket" />

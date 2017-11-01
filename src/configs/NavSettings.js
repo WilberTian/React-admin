@@ -3,6 +3,11 @@ export const componentsExampleNav = {
     sub: 'components-example'
 };
 
+export const customizedFormNav = {
+    system: 'componentsSystem',
+    sub: 'customized-form'
+};
+
 export const dashboardNav = {
     system: '',
     sub: 'dashboard'
