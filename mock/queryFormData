@@ -6,11 +6,23 @@
         	"formItemType": "TextComponent",
         	"formItemData": {
         		"isRequired": true,
+        		"key": "title",
         		"value": "",
 	        	"rules": [],
 	        	"caption": "主标题",
-	        	"note": "请填写主标题，8到14个字",
+	        	"note": "(请填写主标题，8到14个字)",
 	        	"placeholder": "请填写主标题"
+        	}        	
+        }, {
+        	"formItemType": "TextComponent",
+        	"formItemData": {
+        		"isRequired": true,
+        		"key": "subTitle",
+        		"value": "",
+	        	"rules": [],
+	        	"caption": "幅标题",
+	        	"note": "(请填写幅标题，14到20个字)",
+	        	"placeholder": "请填写幅标题"
         	}        	
         }]
     },

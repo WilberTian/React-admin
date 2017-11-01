@@ -1,5 +1,8 @@
 import React, { PureComponent } from 'react';
+
 import FormItems from './formItems';
+
+import './form-item.less';
 
 export default class FormItem extends PureComponent {
     constructor(props) {
@@ -21,7 +24,8 @@ export default class FormItem extends PureComponent {
 
         return React.createElement(FormItems[formItemType], {
             formItemData,
-            ref: (formItemInstance) => { this.wrappedInstance = formItemInstance; }
+            ref: (formItemInstance) => { this.wrappedInstance = formItemInstance; },
+            className: 'form-item'
         });
     }
 }
