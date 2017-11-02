@@ -1,13 +1,16 @@
 import React, { PureComponent } from 'react';
 import { Input } from 'antd';
 
+import validationRules from '../validationRules';
+
 import './text-component.less';
 
 export default class TextComponent extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            textValue: this.props.formItemData.value
+            textValue: this.props.formItemData.value,
+            validationErrMsg: ''
         };
     }
     getValue() {
@@ -18,6 +21,24 @@ export default class TextComponent extends PureComponent {
     }
 
     validateValue() {
+        const { rules } = this.props.formItemData;
+
+        for (let i = 0; i < rules.length; i += 1) {
+            const { name, value, errMsg } = rules[i];
+            const validator = validationRules[name];
+
+            if (!validator(...value, this.state.textValue)) {
+                this.setState({
+                    validationErrMsg: errMsg
+                });
+
+                return false;
+            }
+        }
+
+        this.setState({
+            validationErrMsg: ''
+        });
         return true;
     }
 
@@ -54,7 +75,9 @@ export default class TextComponent extends PureComponent {
                         />
                     </div>
                     <span className="note">{note}</span>
-                    <span className="validation-fail-msg">验证失败</span>
+                    {this.state.validationErrMsg &&
+                        <span className="validation-fail-msg">{this.state.validationErrMsg}</span>
+                    }
                 </div>
             </div>
         );

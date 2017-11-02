@@ -8,7 +8,11 @@
         		"isRequired": true,
         		"key": "title",
         		"value": "",
-	        	"rules": [],
+	        	"rules": [{
+                    "name": "validateLength",
+                    "value": [8, 14],
+                    "errMsg": "主标题8到14个字"
+                }],
 	        	"caption": "主标题",
 	        	"note": "(请填写主标题，8到14个字)",
 	        	"placeholder": "请填写主标题"
@@ -19,7 +23,11 @@
         		"isRequired": true,
         		"key": "subTitle",
         		"value": "",
-	        	"rules": [],
+	        	"rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
 	        	"caption": "幅标题",
 	        	"note": "(请填写幅标题，14到20个字)",
 	        	"placeholder": "请填写幅标题"

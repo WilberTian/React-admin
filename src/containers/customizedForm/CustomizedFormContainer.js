@@ -36,10 +36,20 @@ export default class CustomizedFormContainer extends PureComponent {
     }
 
     _validateForm() {
+        let validationPassed = true;
 
+        this.formItemInstanceList.forEach((formItemInstance) => {
+            validationPassed = formItemInstance.validateValue() && validationPassed;
+        });
+
+        return validationPassed;
     }
 
     _submitForm() {
+        if (!this._validateForm()) {
+            return;
+        }
+
         let submitData = {};
         this.formItemInstanceList.forEach((formItemInstance) => {
             submitData = { ...submitData, ...formItemInstance.getValue() };
