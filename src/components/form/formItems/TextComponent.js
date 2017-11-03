@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Input } from 'antd';
 
 import validationRules from '../validationRules';
+import scrollTo from '../scrollTo';
 
 import './text-component.less';
 
@@ -13,6 +14,7 @@ export default class TextComponent extends PureComponent {
             validationErrMsg: ''
         };
     }
+
     getValue() {
         const { key } = this.props.formItemData;
         return {
@@ -42,6 +44,12 @@ export default class TextComponent extends PureComponent {
         return true;
     }
 
+    scrollTo() {
+        const container = document.querySelector('.app-container .ant-layout');
+
+        scrollTo(container, this.el);
+    }
+
     _textChange(e) {
         this.setState({
             textValue: e.target.value
@@ -61,7 +69,7 @@ export default class TextComponent extends PureComponent {
         } = formItemData;
 
         return (
-            <div className={`${className} text-component`}>
+            <div className={`${className} text-component`} ref={(el) => { this.el = el; }}>
                 <div className="label-wrapper">
                     <span className="is-required">*</span>
                     <span className="caption">{caption}</span>

@@ -18,6 +18,10 @@ export default class FormItem extends PureComponent {
         return this.wrappedInstance.validateValue();
     }
 
+    scrollTo() {
+        return this.wrappedInstance.scrollTo();
+    }
+
     render() {
         const { data } = this.props;
         const { formItemType, formItemData } = data;

@@ -7,7 +7,7 @@
         	"formItemData": {
         		"isRequired": true,
         		"key": "title",
-        		"value": "",
+        		"value": "12345678",
 	        	"rules": [{
                     "name": "validateLength",
                     "value": [8, 14],
@@ -22,7 +22,7 @@
         	"formItemData": {
         		"isRequired": true,
         		"key": "subTitle",
-        		"value": "",
+        		"value": "12345678901234",
 	        	"rules": [{
                     "name": "validateLength",
                     "value": [14, 20],
@@ -32,6 +32,261 @@
 	        	"note": "(请填写幅标题，14到20个字)",
 	        	"placeholder": "请填写幅标题"
         	}        	
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
+        }, {
+            "formItemType": "TextComponent",
+            "formItemData": {
+                "isRequired": true,
+                "key": "subTitle",
+                "value": "12345678901234",
+                "rules": [{
+                    "name": "validateLength",
+                    "value": [14, 20],
+                    "errMsg": "幅标题14到20个字"
+                }],
+                "caption": "幅标题",
+                "note": "(请填写幅标题，14到20个字)",
+                "placeholder": "请填写幅标题"
+            }           
         }]
     },
     "success":true

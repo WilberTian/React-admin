@@ -39,7 +39,12 @@ export default class CustomizedFormContainer extends PureComponent {
         let validationPassed = true;
 
         this.formItemInstanceList.forEach((formItemInstance) => {
-            validationPassed = formItemInstance.validateValue() && validationPassed;
+            const validationResult = formItemInstance.validateValue();
+            if (validationPassed && !validationResult) {
+                formItemInstance.scrollTo();
+            }
+
+            validationPassed = validationResult && validationPassed;
         });
 
         return validationPassed;

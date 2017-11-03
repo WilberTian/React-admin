@@ -11,7 +11,15 @@ const rules = {
 
     validateEmpty: (value) => {
         return value === '';
-    }
+    },
+
+    validateUrl: () => {},
+
+    validateInclude: () => {},
+
+    validateStartWith: () => {},
+
+    validateEndWith: () => {}
 };
 
 export default rules;
