@@ -23,13 +23,12 @@ export default class TextComponent extends PureComponent {
     }
 
     validateValue() {
-        const { rules } = this.props.formItemData;
-
-        for (let i = 0; i < rules.length; i += 1) {
-            const { name, value, errMsg } = rules[i];
+        const { validate } = this.props.element.recording.description;
+        for (let i = 0; i < validate.length; i += 1) {
+            const { name, errMsg } = validate[i];
             const validator = validationRules[name];
 
-            if (!validator(...value, this.state.textValue)) {
+            if (!validator(validate[i], this.state.value)) {
                 this.setState({
                     validationErrMsg: errMsg
                 });

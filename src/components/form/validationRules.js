@@ -1,15 +1,20 @@
 const rules = {
-    validateLength: (min, max, value) => {
+    validateLength: ({ ...ruleObj }, value) => {
         if (!value) return false;
-        return (value.length >= min) && (value.length <= max);
+        return (value.length >= ruleObj.min) && (value.length <= ruleObj.max);
     },
 
-    validateRange: (min, max, value) => {
-        if (!value) return false;
-        return (value >= min) && (value <= max);
+    validateLength4Field: ({ ...ruleObj }, obj) => {
+        if (!obj[ruleObj.key]) return false;
+        return (obj[ruleObj.key].length >= ruleObj.min) && (obj[ruleObj.key].length <= ruleObj.max);
     },
 
-    validateEmpty: (value) => {
+    validateRange: ({ ...ruleObj }, value) => {
+        if (!value) return false;
+        return (value >= ruleObj.min) && (value <= ruleObj.max);
+    },
+
+    validateEmpty: ({ ...ruleObj }, value) => {
         return value === '';
     },
 
