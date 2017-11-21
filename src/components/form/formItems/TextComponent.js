@@ -52,6 +52,8 @@ export default class TextComponent extends PureComponent {
     _textChange(e) {
         this.setState({
             textValue: e.target.value
+        }, () => {
+            this.validateValue();
         });
     }
 
