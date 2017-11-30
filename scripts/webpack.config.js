@@ -11,6 +11,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Visualizer = require('webpack-visualizer-plugin');
 
 const configs = require('./config');
+const theme = require('./theme.config.js');
 
 const DEVELOPMENT = 'development';
 const PRODUCTION = 'production';
@@ -104,7 +105,7 @@ const lessModuleLoader = {
         'style-loader',
         'css-loader',
         postCSSLoader,
-        'less-loader',
+        `less-loader?{"sourceMap":true,"modifyVars":${JSON.stringify(theme)}}`
     ],
 };
 
