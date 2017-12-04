@@ -134,6 +134,7 @@ let webpackConfig = {
     output: {
         path: configs.buildFolder,
         filename: 'js/[name].js',
+        jsonpFunction: 'reactAdminJsonp'
     },
     module: {
         rules: [
