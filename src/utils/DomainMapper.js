@@ -28,6 +28,7 @@ export default ({ modelMapper, actionMapper }) => {
                 super(props);
                 this.state = {};
                 this._uniqueCompId = `${WrappedComponent.name}'$$'${uuidv4()}`;
+                this.wrappedComponentInstance = null;
             }
 
             componentWillMount() {
@@ -61,7 +62,12 @@ export default ({ modelMapper, actionMapper }) => {
 
             render() {
                 const { action } = this.domain;
-                return <WrappedComponent {...this.props} {...this.modelMapperPorps} {...actionMapper(action)} />;
+                return (<WrappedComponent
+                  ref={(instance) => { this.wrappedComponentInstance = instance; }}
+                  {...this.props}
+                  {...this.modelMapperPorps}
+                  {...actionMapper(action)}
+                />);
             }
         }
 

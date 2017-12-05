@@ -18,6 +18,7 @@ const DomainComponentCreator = (domainObject) => {
                 super(props);
 
                 this.domain = DomainCreator(domainObject);
+                this.wrappedComponentInstance = null;
             }
 
             getChildContext() {
@@ -27,7 +28,10 @@ const DomainComponentCreator = (domainObject) => {
             }
 
             render() {
-                return <WrappedComponent {...this.props} />;
+                return (<WrappedComponent
+                  ref={(instance) => { this.wrappedComponentInstance = instance && instance.wrappedComponentInstance; }}
+                  {...this.props}
+                />);
             }
         }
 
